@@ -1,6 +1,6 @@
 {
-	"extends": "@tsconfig/react-native/tsconfig.json",
 	"compilerOptions": {
+		"resolveJsonModule": true,
 		"target": "esnext",
 		"module": "es6",
 		"lib": ["es2016"],
@@ -15,14 +15,16 @@
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
-		"types": ["react", "react-native", "node"]
+		"types": ["react", "react-native"],
+		"paths": {
+			"react": ["./node_modules/@types/react"]
+		}
 	},
 	"exclude": [
 		"node_modules",
 		"babel.config.js",
 		"metro.config.js",
 		"jest.config.js",
-		"jest.setup.js",
 		"src/**/*.spec.ts",
 		"src/**/*.spec.tsx",
 		"src/**/*.test.ts",

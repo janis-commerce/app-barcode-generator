@@ -7,11 +7,14 @@
 		"ios": "react-native run-ios",
 		"lint": "eslint .",
 		"start": "react-native start",
-		"test": "jest"
+		"test": "jest",
+		"test:coverage": "tsc --noEmit && jest --collectCoverage --detectOpenHandles",
+		"build": "rm -rf dist && tsc && cp -r android ios dist"
 	},
 	"dependencies": {
 		"@kichiyaki/react-native-barcode-generator": "^0.6.7",
-		"react-native-svg": "^15.2.0"
+		"react-native-svg": "^15.2.0",
+		"react-qr-code": "^2.0.13"
 	},
 	"peerDependencies": {
 		"react": "18.2.0",
@@ -19,6 +22,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.0",
+		"@babel/plugin-transform-private-methods": "^7.24.1",
 		"@babel/preset-env": "^7.20.0",
 		"@babel/runtime": "^7.20.0",
 		"@react-native-community/eslint-config": "^3.2.0",
@@ -35,8 +39,5 @@
 		"react-native": "0.71.5",
 		"react-test-renderer": "18.2.0",
 		"typescript": "4.8.4"
-	},
-	"jest": {
-		"preset": "react-native"
 	}
 }
