@@ -1,7 +1,6 @@
 {
 	"name": "app-barcode-generator",
 	"version": "0.0.1",
-	"private": true,
 	"scripts": {
 		"android": "react-native run-android",
 		"ios": "react-native run-ios",
@@ -20,6 +19,9 @@
 		"react": "18.2.0",
 		"react-native": "0.71.5"
 	},
+	"files": [
+		"dist/"
+	],
 	"devDependencies": {
 		"@babel/core": "^7.20.0",
 		"@babel/plugin-transform-private-methods": "^7.24.1",
@@ -39,5 +41,14 @@
 		"react-native": "0.71.5",
 		"react-test-renderer": "18.2.0",
 		"typescript": "4.8.4"
+	},
+	"react-native": {
+		"autoLinking": {
+			"platforms": {
+				"android": {
+					"sourceDir": "./android"
+				}
+			}
+		}
 	}
 }
