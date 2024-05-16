@@ -1,5 +1,5 @@
 {
-	"name": "app-barcode-generator",
+	"name": "@janiscommerce/app-barcode-generator",
 	"version": "1.0.0",
 	"scripts": {
 		"android": "react-native run-android",
