@@ -8,7 +8,12 @@ export interface QrCodeProps {
 	foregroundColor?: string;
 }
 
-const QRCode = ({value, size = 100, backgroundColor, foregroundColor}: QrCodeProps) => {
+const QRCode = ({
+	value,
+	size = 100,
+	backgroundColor = '#FFF',
+	foregroundColor = '#000',
+}: QrCodeProps) => {
 	if (!value) {
 		return null;
 	}
