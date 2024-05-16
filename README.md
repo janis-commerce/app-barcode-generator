@@ -2,7 +2,7 @@
 
 ![janis-logo](brand-logo.png)
 
-[![npm package](https://badge.fury.io/js/react-qr-code.svg)](https://www.npmjs.org/package/@janiscommerce/app-barcode-generator)
+![NPM Version](https://img.shields.io/npm/v/%40janiscommerce%2Fapp-barcode-generator)
 
 React native components for generating barcode and QRcode. The library provides two components according to the type of code you need to create
 
