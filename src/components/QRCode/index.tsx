@@ -3,7 +3,7 @@ import QRCodePkg from 'react-qr-code';
 
 export interface QrCodeProps {
 	size?: number;
-	value: string;
+	value: unknown;
 	backgroundColor?: string;
 	foregroundColor?: string;
 }
@@ -18,10 +18,11 @@ const QRCode = ({
 		return null;
 	}
 
-	const valueParsed = typeof value === 'string' ? JSON.stringify(value) : value;
+	const valueParsed = typeof value === 'string' ? value : JSON.stringify(value);
+
 	return (
 		<QRCodePkg
-			value={valueParsed}
+			value={valueParsed as string}
 			size={Number(size)}
 			bgColor={backgroundColor}
 			fgColor={foregroundColor}

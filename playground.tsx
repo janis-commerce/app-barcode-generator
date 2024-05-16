@@ -4,6 +4,9 @@ import Barcode from './src/components/Barcode';
 import QRCode from './src/components/QRCode';
 
 const styles = StyleSheet.create({
+	safeArea: {
+		flex: 1,
+	},
 	wrapper: {
 		flex: 1,
 		padding: 20,
@@ -16,10 +19,10 @@ const styles = StyleSheet.create({
 	},
 });
 const BarcodeGenerator = () => {
-	const value = {test: 1};
+	const value = '23';
 
 	return (
-		<SafeAreaView style={{flex: 1}}>
+		<SafeAreaView style={styles.safeArea}>
 			<View style={styles.wrapper}>
 				<View style={styles.container}>
 					<Barcode value={value} format="EAN8" text={<Text>{String(value)}</Text>} />
