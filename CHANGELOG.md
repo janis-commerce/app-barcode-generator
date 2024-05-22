@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## [1.1.2] - 2024-05-22
+
+### Fixed
+
+- export component
+
 ## [1.1.1] - 2024-05-22
 
 ### Fixed
