@@ -29,10 +29,10 @@ export interface BarcodeProps {
 	text?: string | React.ReactNode;
 	backgroundColor?: string;
 	width?: number;
-	height?:number;
+	height?: number;
 	onError?: (error: Error) => void;
 }
-const Barcode = ({value, format, text, onError, backgroundColor = '#fff', width = 2, height = 100}: BarcodeProps) => {
+const Barcode = ({ value, format, text, onError, backgroundColor = '#fff', width = 2, height = 100 }: BarcodeProps) => {
 	if (!value || !format || typeof value !== 'string') {
 		return null;
 	}
