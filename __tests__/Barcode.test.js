@@ -11,6 +11,6 @@ describe('Barcode component', () => {
 	});
 
 	it('should  return component when value or format are valid', () => {
-		expect(create(<Barcode value="123" format="CODE128" />).toJSON()).toBeTruthy();
+		expect(create(<Barcode value="123" format="CODE128" width={1} height={100}/>).toJSON()).toBeTruthy();
 	});
 });

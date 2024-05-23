@@ -19,13 +19,13 @@ const styles = StyleSheet.create({
 	},
 });
 const BarcodeGenerator = () => {
-	const value = '23';
+	const value = '663cefafe6df49b9afb0229c';
 
 	return (
 		<SafeAreaView style={styles.safeArea}>
 			<View style={styles.wrapper}>
 				<View style={styles.container}>
-					<Barcode value={value} format="EAN8" text={<Text>{String(value)}</Text>} />
+					<Barcode value={value} format='CODE128' text={<Text>{String(value)}</Text>} width={1} height={50}/>
 				</View>
 				<View style={styles.container}>
 					<QRCode value={JSON.stringify(value)} size={150} />
