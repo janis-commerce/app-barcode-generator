@@ -34,6 +34,8 @@ import {Text} from 'react-native';
 | text            | function | React native component to show value below barcode        |               | no       |
 | backgroundColor | string   | Background color for barcode                              | #FFF          | no       |
 | onError         | function | Callback to execute when has error                        |               | no       |
+| width           | number   | Width of the barcode                                      |               | no       |
+| height          | number   | Heigth of the barcode                                     |               | no       |
 
 ### Supported formats
 
