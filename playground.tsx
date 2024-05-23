@@ -25,7 +25,7 @@ const BarcodeGenerator = () => {
 		<SafeAreaView style={styles.safeArea}>
 			<View style={styles.wrapper}>
 				<View style={styles.container}>
-					<Barcode value={value} format='CODE128' text={<Text>{String(value)}</Text>} width={1} height={50}/>
+					<Barcode value={value} format="CODE128" width={1} height={50} text={<Text>{String(value)}</Text>}/>
 				</View>
 				<View style={styles.container}>
 					<QRCode value={JSON.stringify(value)} size={150} />
