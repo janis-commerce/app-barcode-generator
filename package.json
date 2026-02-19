@@ -19,7 +19,7 @@
 	},
 	"peerDependencies": {
 		"react": ">=17.0.2 <20.0.0",
-		"react-native": ">=0.73.0 <0.82.0"
+		"react-native": ">=0.71.5 <0.82.0"
 	},
 	"files": [
 		"dist/"
