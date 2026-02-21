@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## [1.4.0] - 2026-02-21
+
+### Changed
+
+- Version of node to 22
+
+### Added
+
+- Support for react native 0.80
+
 ## [1.4.0-beta.2] - 2026-02-21
 
 ### Changed
